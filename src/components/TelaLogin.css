@@ -1,10 +1,16 @@
 .container-principal {
-  background: linear-gradient(135deg, #ffff27, #a3e635, #ffffff);
+  /* O gradiente de fundo */
+  background: linear-gradient(-45deg, #ffff00, #adff2f, #ffffff, #adff2f);
+  
+  /* O tamanho do fundo precisa ser maior que 100% para a animação funcionar */
   background-size: 400% 400%;
-  animation: gradient-anim 10s ease infinite;
+  
+  /* Aplica a animação que definiremos abaixo */
+  animation: gradient-movement 12s ease infinite;
 }
 
-@keyframes gradient-anim {
+/* Define os passos da animação */
+@keyframes gradient-movement {
   0% {
     background-position: 0% 50%;
   }
