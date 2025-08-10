@@ -1,0 +1,17 @@
+.container-principal {
+  background: linear-gradient(135deg, #ffff27, #a3e635, #ffffff);
+  background-size: 400% 400%;
+  animation: gradient-anim 10s ease infinite;
+}
+
+@keyframes gradient-anim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
